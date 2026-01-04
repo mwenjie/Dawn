@@ -5,8 +5,8 @@
 
                 <div class="cover-hero-media">
                     <img class="cover-hero-image"
-                        src="{{#if @custom.hero_image}}{{@custom.hero_image}}{{else if @site.cover_image}}{{@site.cover_image}}{{else}}https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=1920&q=80{{/if}}"
-                        alt="{{@site.title}}" loading="lazy">
+                        src="{{#if @custom.hero_image}}{{@custom.hero_image}}{{else if @site.cover_image}}{{@site.cover_image}}{{else}}{{asset "
+                        images/hero-systems.svg"}}{{/if}}" alt="{{@site.title}}" loading="lazy">
                 </div>
 
                 <div class="cover-hero-content">
@@ -55,5 +55,28 @@
                 </div>
             </div>
         </div>
+
+        <section class="cover-intro" aria-label="Why this blog exists">
+            <div class="cover-intro-inner">
+                <h2 class="cover-intro-title">Why This Blog Exists</h2>
+
+                <p class="cover-intro-lede">Most architecture looks clean on a slide deck.<br>Most systems fail at 3 AM.
+                </p>
+
+                <p class="cover-intro-muted">This blog is a record of what actually worked — and what didn’t — while
+                    building data platforms, AI workflows, and infrastructure that had to survive production, scale, and
+                    human error.</p>
+
+                <div class="cover-intro-list-block">
+                    <p class="cover-intro-label">I write for engineers who:</p>
+
+                    <ul class="cover-list cover-intro-list">
+                        <li>Prefer clarity over hype</li>
+                        <li>Care about blast radius</li>
+                        <li>Have broken things and want to break fewer next time</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
