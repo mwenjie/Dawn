@@ -1,1 +1,4 @@
 node_modules
+.ghost-local/
+.ghost-local/content/data/ghost-local.db
+.ghost-local/content/logs/http___localhost_2368__development.log

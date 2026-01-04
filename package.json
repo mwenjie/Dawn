@@ -44,7 +44,11 @@
         "custom": {
             "navigation_layout": {
                 "type": "select",
-                "options": ["Logo on the left", "Logo in the middle", "Stacked"],
+                "options": [
+                    "Logo on the left",
+                    "Logo in the middle",
+                    "Stacked"
+                ],
                 "default": "Logo on the left"
             },
             "title_font": {
@@ -78,6 +82,22 @@
             "show_featured_posts": {
                 "type": "boolean",
                 "default": true,
+                "group": "homepage"
+            },
+            "hero_image": {
+                "type": "image",
+                "group": "homepage"
+            },
+            "hero_instagram": {
+                "type": "text",
+                "group": "homepage"
+            },
+            "hero_facebook": {
+                "type": "text",
+                "group": "homepage"
+            },
+            "hero_linkedin": {
+                "type": "text",
                 "group": "homepage"
             },
             "featured_title": {
