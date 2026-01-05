@@ -1,4 +1,25 @@
-node_modules
-.ghost-local/
-.ghost-local/content/data/ghost-local.db
-.ghost-local/content/logs/http___localhost_2368__development.log
+
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# Build artifacts
+dist/
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ghost content (when running locally)
+content/
