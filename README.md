@@ -17,7 +17,7 @@ The easiest way to develop this theme is using Docker. This approach uses the of
 
 ```bash
 # Start Ghost with the theme
-docker-compose up
+docker compose up
 
 # Ghost will be available at http://localhost:2368
 # Admin panel: http://localhost:2368/ghost
@@ -27,7 +27,7 @@ The theme files are automatically mounted into the Ghost container, so any chang
 
 To stop the container:
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ## Local Development
