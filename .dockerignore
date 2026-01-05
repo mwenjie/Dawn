@@ -1,0 +1,28 @@
+# Ignore node modules
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Ignore git files
+.git
+.gitignore
+.gitattributes
+
+# Ignore build artifacts
+dist
+*.zip
+
+# Ignore development files
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+
+# Ignore Docker files themselves
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Ignore documentation that doesn't need to be in the container
+README.md
+LICENSE

@@ -1,0 +1,26 @@
+services:
+  ghost:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "2368:2368"
+    environment:
+      # Set the URL for Ghost
+      url: http://localhost:2368
+      # Database configuration (using SQLite for simplicity)
+      database__client: sqlite3
+      database__connection__filename: /var/lib/ghost/content/data/ghost.db
+      # Disable automatic updates
+      NODE_ENV: development
+    volumes:
+      # Mount the theme directory for live development
+      - ./:/var/lib/ghost/content/themes/dawn:cached
+      # Persist Ghost data
+      - ghost_data:/var/lib/ghost/content/data
+      - ghost_images:/var/lib/ghost/content/images
+    restart: unless-stopped
+
+volumes:
+  ghost_data:
+  ghost_images:

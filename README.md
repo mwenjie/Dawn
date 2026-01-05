@@ -11,6 +11,27 @@ A highly functional [Ghost](https://github.com/TryGhost/Ghost) theme that adapts
 
 # Development
 
+## Docker Development (Recommended)
+
+The easiest way to develop this theme is using Docker. This approach uses the official Ghost Docker image, so you don't have to install Ghost manually.
+
+```bash
+# Start Ghost with the theme
+docker-compose up
+
+# Ghost will be available at http://localhost:2368
+# Admin panel: http://localhost:2368/ghost
+```
+
+The theme files are automatically mounted into the Ghost container, so any changes you make will be reflected immediately. You can then activate the Dawn theme from the Ghost admin panel under Design settings.
+
+To stop the container:
+```bash
+docker-compose down
+```
+
+## Local Development
+
 Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
 ```bash
